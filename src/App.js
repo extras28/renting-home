@@ -9,6 +9,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AppNotFound from "general/components/AppNotFound";
 import AppDialog from "general/components/AppDialog";
+import SignInScreen from "features/Auth/SignInScreen";
+import SignUpScreen from "features/Auth/SignUpScreen";
 
 
 // Load BS
@@ -40,7 +42,11 @@ function App() {
         {/* Suspense */}
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-      
+            {/* Sign In */}
+            <Route path="/sign-in" element={<SignInScreen />} />
+
+            {/* Sign Up */}
+            <Route path="/sign-up" element={<SignUpScreen />} />
             {/* Not Found */}
             <Route path="*" element={<AppNotFound />} />
           </Routes>
