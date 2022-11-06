@@ -33,22 +33,11 @@
 .SignInScreen {
   &_Right {
     background-image: url('../../../assets/images/background_login.png');
-<<<<<<< HEAD
     background-size:cover;
 }
 
 @media screen and (max-width: 960px) {
-    .gradient-custom{
-      display: none;
-    }
+  
 
-    .gradient-custom-2{
-        height:auto;
-     background-color: #E0DEF7;
-    }
-  }
-=======
-    background-size: cover;
-  }
 }
->>>>>>> cfe3fecd727823473c24ab3255f8949b28863653
+
