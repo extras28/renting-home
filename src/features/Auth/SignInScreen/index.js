@@ -13,7 +13,7 @@ function SignInScreen(props) {
 
 
         <div className="row g-0">
-            <div className="col-lg-6 h-100 lg6">
+            <div className="col-lg-6 h-100 lg6 gradient-custom-2">
                 <div className='h4 text-start mt-5 ms-5 mb-5 pb-5 pt-5 ps-3 '>
                     <i style={{ fontSize: '20px', color: '#7065F0' }} className="fas fa-home-heart "></i>
                     <span style={{ color: '#100A55' }} className='font-weight-boldest'>Home Renting</span>
