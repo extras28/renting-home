@@ -36,3 +36,11 @@
     background-size: cover;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .SignInScreen {
+    &_Right {
+      display: none;
+    }
+  }
+}
