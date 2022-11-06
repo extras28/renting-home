@@ -18,10 +18,6 @@ function SignInScreen(props) {
                     <i style={{ fontSize: '20px', color: '#7065F0' }} className="fas fa-home-heart "></i>
                     <span style={{ color: '#100A55' }} className='font-weight-boldest'>Home Renting</span>
                 </div>
-                <hr color="#7065F0" />
-                <div className="mt-5 ps-3 pe-5 pt-5">
-                    <form style={{ maxWidth: '500px' }} className='mt-5 mb-5 ms-5  '>
-                        <div className='mb-3 pe-2'>
 
                             <p style={{ color: '#000929' }} className='h1 pt-1 pb-1 ps-5 font-weight-boldest '>Welcome back</p>
                             <p className='ps-5 font-size-lighter'>Welcome back! Please enter your details.</p>
@@ -45,13 +41,12 @@ function SignInScreen(props) {
                             <span>Don't have an account ? </span>
                             <a className="font-weight-bolder" href="" style={{ color: 'black' }}><u>Sign up for free</u></a>
                         </div>
-
+                     
                     </form>
-
                 </div>
             </div>
             <div style={{ backgroundColor: '#F7F7FD' }} className="col-lg-6 lg6 gradient-custom">
-                <div className='login_background bg-image'>
+            <div className='login_background bg-image'>
                     <div style={{ paddingTop: '48px' }} className='pt-5 ps-5 pe-5 pb-5 h-100'>
                         <div style={{ width: '30vw', minWidth: '20rem' }} className="card mt-24 ms-5 bg-transparent pt-5 border-0">
                             <div style={{ color: '#D6DDEB' }} className=' border border-2 pt-5 ps-5 pe-5 rounded bg-white'>
@@ -116,7 +111,6 @@ function SignInScreen(props) {
 
                 </div>
             </div>
-
         </div>
     );
 }

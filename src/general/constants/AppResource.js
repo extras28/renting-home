@@ -14,7 +14,7 @@ const AppResource = {
 
     },
     color: {
-
+        featureColor: '#7065F0'
     }
 }
 

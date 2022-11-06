@@ -1,26 +1,39 @@
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-  }
-.imputform{
-    background-color: #F7F7FD;
-    border: 1px solid #E0DEF7;
-}
+// html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
+//     margin: 0;
+//     padding: 0;
+//     border: 0;
+//     font-size: 100%;
+//   }
+// .imputform{
+//     background-color: #F7F7FD;
+//     border: 1px solid #E0DEF7;
+// }
 
-.inputform:focus{
-    border-color:#7065F0 !important;
-}
+// .inputform:focus{
+//     border-color:#7065F0 !important;
+// }
 
-.lg6{
-    padding: 0 !important;
-    overflow:auto;
-}
+// .lg6{
+//     padding: 0 !important;
+//     overflow:auto;
+// }
 
-.login_background{
-    height:auto;
+// .login_background{
+//     height:auto;
+//     background-image: url('../../../assets/images/background_login.png');
+//     background-size:cover;
+// }
+
+// @media screen and (max-width: 960px) {
+//     .gradient-custom{
+//       display: none;
+//     }
+//   }
+
+.SignInScreen {
+  &_Right {
     background-image: url('../../../assets/images/background_login.png');
+<<<<<<< HEAD
     background-size:cover;
 }
 
@@ -34,3 +47,8 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
      background-color: #E0DEF7;
     }
   }
+=======
+    background-size: cover;
+  }
+}
+>>>>>>> cfe3fecd727823473c24ab3255f8949b28863653
