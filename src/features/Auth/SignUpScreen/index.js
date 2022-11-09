@@ -15,7 +15,7 @@ SignUpScreen.propTypes = {
 
 };
 
-const sTag = '[SignInScreen]';
+const sTag = '[SignUpScreen]';
 
 function SignUpScreen(props) {
 
