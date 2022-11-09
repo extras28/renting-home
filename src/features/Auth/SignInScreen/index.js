@@ -53,19 +53,25 @@ function SignInScreen(props) {
 
         <div className='SignInScreen row min-vh-100 m-0 bg-white'>
             {/* left*/}
-            <div className='col-12 col-lg-6 p-0 bg-white'>
+            <div className='col-12 col-lg-6 p-0 bg-white '>
                 {/* header */}
-                <div className='py-10 pl-10 border-bottom'>
-                    <i style={{ fontSize: '20px', color: '#7065F0' }} className="fas fa-home-heart "></i>
-                    <span style={{ color: '#100A55', fontSize: '20px' }} className='font-weight-boldest'>Home Renting</span>
+                <div className='py-10 pl-10 border-bottom d-flex justify-content-between'>
+                    <div>
+
+                        <i style={{ fontSize: '20px', color: '#7065F0' }} className="fas fa-home-heart "></i>
+                        <span style={{ color: '#100A55', fontSize: '20px' }} className='font-weight-boldest'>Home Renting</span>
+                    </div>
+                    <div className=" me-5">
+                        <i style={{ fontSize: '28px', color: 'black' }} className="far fa-equals SignUpScreen_mobile"></i>
+                    </div>
                 </div>
 
                 {/* form */}
                 <div className='d-flex align-items-center justify-content-center mt-20'>
-                    <form style={{width: '352px'}}  onClick={formik.handleSubmit}>
+                    <form style={{ width: '352px' }} onClick={formik.handleSubmit}>
                         <p style={{ color: '#000929', fontSize: '32px' }} className='font-weight-boldest '>Welcome back</p>
                         <p className='font-weight-bold' style={{ color: '#000929', fontSize: '16px', opacity: '0.5' }}>Welcome back! Please enter your details.</p>
-                        <BaseTextField 
+                        <BaseTextField
                             name='email'
                             label='Email'
                             placeholder='Nhập email...'
@@ -73,7 +79,7 @@ function SignInScreen(props) {
                             fieldHelper={formik.getFieldHelpers('email')}
                             fieldMeta={formik.getFieldMeta('email')}
                         />
-                        <BaseTextField 
+                        <BaseTextField
                             type='password'
                             name='password'
                             label='Mật khẩu'
@@ -83,26 +89,26 @@ function SignInScreen(props) {
                             fieldMeta={formik.getFieldMeta('password')}
                         />
                         <p style={{ color: '#7065F0' }} className='text-center cursor-pointer'>Forgot Password ?</p>
-                        <AppButton 
+                        <AppButton
                             className='w-100 btn-purple'
-                            style={{height: '48px'}}
+                            style={{ height: '48px' }}
                             text='Login'
                         />
-                        <AppButton 
+                        <AppButton
                             beforIcon={(<img src={AppResource.images.imgGoogleLogo} alt="google logo" />)}
                             className='btn-grey w-100 mt-6'
-                            style={{backgroundColor: '#FFFFFF', border: '1px solid #D6DDEB', height: '48px'}}
+                            style={{ backgroundColor: '#FFFFFF', border: '1px solid #D6DDEB', height: '48px' }}
                             text='Continue with Google'
                         />
                         <p className='text-center mt-10'>Don't have an account ? <a className="font-weight-bolder" href="#" style={{ color: 'black' }}><u>Sign up for free</u></a></p>
-                     
+
                     </form>
                 </div>
             </div>
 
             {/* right */}
             <div className='SignInScreen_Right col-6 p-0'>
-            <div className='login_background bg-image'>
+                <div className='login_background bg-image'>
                     <div style={{ paddingTop: '48px' }} className='pt-5 ps-5 pe-5 pb-5 h-100'>
                         <div style={{ width: '30vw', minWidth: '20rem' }} className="card mt-24 ms-5 bg-transparent pt-5 border-0">
                             <div style={{ color: '#D6DDEB' }} className=' border border-2 pt-5 ps-5 pe-5 rounded bg-white'>
@@ -156,12 +162,12 @@ function SignInScreen(props) {
                             <div>
                             </div>
                         </div>
-                        <div style={{ maxWidth: '30vw',paddingTop:'32px'}} className="ms-5 ps-1 pe-1">
+                        <div style={{ maxWidth: '30vw', paddingTop: '32px' }} className="ms-5 ps-1 pe-1">
                             <div className='d-flex justify-content-start align-items-center mb-2 pb-2'>
-                            <span className="font-weight-bolder">Powered By</span>
-                            <img className="ms-2"src={AppResource.images.house}></img>
+                                <span className="font-weight-bolder">Powered By</span>
+                                <img className="ms-2" src={AppResource.images.house}></img>
                             </div>
-                            <p style={{ fontSize: '12px' }}>You agree to Estatery's <a style={{color:'#7065F0'}}href="">Terms of Use & Privacy Policy</a>. You don't need to consent as a condition of renting any property, or buying any other goods or services. Message/data rates may apply.</p>
+                            <p style={{ fontSize: '12px' }}>You agree to Estatery's <a style={{ color: '#7065F0' }} href="">Terms of Use & Privacy Policy</a>. You don't need to consent as a condition of renting any property, or buying any other goods or services. Message/data rates may apply.</p>
                         </div>
                     </div>
 
