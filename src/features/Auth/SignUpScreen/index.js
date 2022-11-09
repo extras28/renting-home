@@ -9,6 +9,7 @@ import AppButton from 'general/components/AppButton';
 import Utils from 'general/utils/Utils';
 import ToastHelper from 'general/helpers/ToastHelpers';
 import * as Yup from 'yup';
+import { useNavigate } from 'react-router-dom';
 
 
 SignUpScreen.propTypes = {
@@ -18,6 +19,8 @@ SignUpScreen.propTypes = {
 const sTag = '[SignUpScreen]';
 
 function SignUpScreen(props) {
+
+    const navigate = useNavigate()
 
     const formik = useFormik({
         initialValues: {
@@ -72,7 +75,7 @@ function SignUpScreen(props) {
 
                 {/* form */}
                 <div className='d-flex align-items-center justify-content-center mt-20'>
-                    {/* <form style={{ width: '352px' }} onClick={formik.handleSubmit}> */}
+                    <form style={{ width: '352px' }} onSubmit={formik.handleSubmit}>
                     {/* thay tạm thẻ div cho thẻ form ở trên  */}
                     <div style={{ width: '352px' }}>
                         <p style={{ color: '#000929', fontSize: '32px' }} className='font-weight-boldest '>Welcome back</p>
@@ -123,9 +126,9 @@ function SignUpScreen(props) {
                             style={{ backgroundColor: '#FFFFFF', border: '1px solid #D6DDEB', height: '48px' }}
                             text='Sign up with Google'
                         />
-                        <p className='text-center mt-10'>Already have an account ? <a className="font-weight-bolder" href="#" style={{ color: 'black' }}><u>Login</u></a></p>
+                        <p className='text-center mt-10'>Already have an account ? <span onClick={()=>navigate('/sign-in')} className="cursor-pointer font-weight-bolder" style={{ color: 'black' }}><u>Login</u></span></p>
                     </div>
-                    {/* </form> */}
+                    </form>
 
                 </div>
             </div>

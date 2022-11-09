@@ -11,6 +11,7 @@ import AppNotFound from "general/components/AppNotFound";
 import AppDialog from "general/components/AppDialog";
 import SignInScreen from "features/Auth/SignInScreen";
 import SignUpScreen from "features/Auth/SignUpScreen";
+import LandingPage from "features/LandingPage";
 
 
 // Load BS
@@ -42,6 +43,8 @@ function App() {
         {/* Suspense */}
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
+            {/* Landing page */}
+            <Route path="/" element={<LandingPage />}/>
             {/* Sign In */}
             <Route path="/sign-in" element={<SignInScreen />} />
 
