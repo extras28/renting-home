@@ -1,0 +1,29 @@
+.HeaderLandingPage{
+    .dropdown-toggle.btn:after{
+        display: none !important;
+    }
+    
+        &_mobile{
+            float:right;
+            opacity: 0;
+            
+        }
+   
+
+    background-color:#edecfb;
+}
+
+@media screen and (max-width: 991px) {
+    .HeaderLandingPage{
+       
+
+        &_Right{
+            display:none;
+            
+        }
+        &_mobile{
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}
