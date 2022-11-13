@@ -1,29 +1,55 @@
-.HeaderLandingPage{
+.HeaderLandingPage {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
     .dropdown-toggle.btn:after{
         display: none !important;
     }
-    
-        &_mobile{
-            float:right;
-            opacity: 0;
-            
-        }
-   
 
-    background-color:#edecfb;
+    &_item{
+        padding: 8px 13px !important;
+        color:black !important;
+        border-radius: 4px;
+    }
+
+    &_item:hover{
+        background-color: #E8E6F9;
+        color:#7065F0 !important;
+    }
+
+    &_dropdown{
+        padding:6.5px;
+    }
+
+    &_icon{
+        font-size: 20px;
+    }
+    
+    &_left{
+        float:right;
+    }
+
+    &_mobile {
+        float: right;
+        opacity: 0;
+
+    }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
     .HeaderLandingPage{
-       
-
-        &_Right{
+        &_headerText{
             display:none;
-            
         }
-        &_mobile{
-            opacity: 1;
-            cursor: pointer;
+        &_icon{
+            width:48px;
+        }
+
+        &_left{
+            float:none ;
         }
     }
 }

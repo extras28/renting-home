@@ -8,7 +8,8 @@ const AppResource = {
         vector : require('assets/images/vector.png'),
         area: require('assets/images/area.png'),
         list: require('assets/images/list.png'),
-        house:require('assets/images/house.png')
+        house:require('assets/images/house.png'),
+        houseIcon:require('assets/images/house_icon.png')
     },
     icons: {
 
