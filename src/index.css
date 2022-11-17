@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"); */
 /* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* Custom fonts */
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Marck+Script&family=Meddon&family=Pacifico&display=swap");
@@ -16,13 +17,13 @@
 html,
 body {
   /* font size of root element (rem) */
-  font-size: 13px !important;
+  font-size: 16px !important;
 }
 
 body {
   margin: 0;
   /* font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", */
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -31,17 +32,20 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
-.table-striped tbody tr:nth-of-type(odd){
+.table-striped tbody tr:nth-of-type(odd) {
   background-color: #F9FBFF !important;
 }
+
 .table-hover tbody tr:hover {
   color: #3F4254;
   background-color: #E4E6EF !important;
 }
+
 .table-striped>tbody>tr:nth-of-type(odd)>* {
   --bs-table-accent-bg: transparent !important;
 }

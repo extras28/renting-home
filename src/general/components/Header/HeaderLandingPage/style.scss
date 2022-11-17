@@ -1,5 +1,6 @@
 .HeaderLandingPage {
     background-color: rgba(255, 255, 255, 0.4) !important;
+    font-size: 16px;
 
     .navbar-toggler:focus {
         box-shadow: none;
@@ -10,7 +11,8 @@
     }
 
     &_item{
-        padding: 8px 13px !important;
+        // margin:6px 0;
+        // padding: 5px 8px !important;
         color:black !important;
         border-radius: 4px;
     }
@@ -32,14 +34,12 @@
         float:right;
     }
 
-    &_mobile {
-        float: right;
-        opacity: 0;
-
+    &_mobile{
+        display:none !important;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
     .HeaderLandingPage{
         &_headerText{
             display:none;
@@ -51,5 +51,10 @@
         &_left{
             float:none ;
         }
+
+        &_mobile{
+            display:block;
+        }
+
     }
 }
