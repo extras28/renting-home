@@ -78,7 +78,7 @@ function FooterLandingPage(props) {
                 <hr className="m-0" style={{border:'0.5px solid #7065F0'}}/>
                 <div className='row d-flex justify-content-between align-items-center m-0 py-6 px-6'>
                     <div className="d-flex justify-content-center align-items-center justify-content-md-start col-12 col-md-6 " style={{fontSize:'16px'}}>©2021 Estatery. All rights reserved</div>
-                    <div className="d-flex justify-content-center justify-content-md-end align-items-center col-12 col-md-6 ">
+                    <div className="d-flex justify-content-center justify-content-md-end align-items-center col-12 mt-5 mt-md-0 col-md-6 ">
                     <a href="#" className=' me-5'><i style={{fontSize:'20px'}} className="FooterLandingPage_btn fab fa-facebook-f"></i></a>
                     <a href="#" className=' me-5'><i style={{fontSize:'20px'}} className="FooterLandingPage_btn fab fa-instagram"></i></a>
                     <a href="#" className=' me-5'><i style={{fontSize:'20px'}} className="FooterLandingPage_btn fab fa-twitter"></i></a>
