@@ -1,0 +1,60 @@
+.HeaderLandingPage {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    font-size: 16px;
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .dropdown-toggle.btn:after{
+        display: none !important;
+    }
+
+    &_item{
+        // margin:6px 0;
+        // padding: 5px 8px !important;
+        color:black !important;
+        border-radius: 4px;
+    }
+
+    &_item:hover{
+        background-color: #E8E6F9;
+        color:#7065F0 !important;
+    }
+
+    &_dropdown{
+        padding:6.5px;
+    }
+
+    &_icon{
+        font-size: 20px;
+    }
+    
+    &_left{
+        float:right;
+    }
+
+    &_mobile{
+        display:none !important;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .HeaderLandingPage{
+        &_headerText{
+            display:none;
+        }
+        &_icon{
+            width:48px;
+        }
+
+        &_left{
+            float:none ;
+        }
+
+        &_mobile{
+            display:block;
+        }
+
+    }
+}
