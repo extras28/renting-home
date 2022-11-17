@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import './style.scss';
 import Dropdown from 'react-bootstrap/Dropdown';
 import {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 HeaderLandingPage.propTypes = {
 
@@ -18,6 +19,8 @@ function HeaderLandingPage(props) {
         setShowing(current => !current);
         console.log(showing);
     };
+
+    const navigate = useNavigate();
 
     
    
@@ -74,8 +77,8 @@ function HeaderLandingPage(props) {
                         </ul>
                         <div className=" w-100 float-end" >
 
-                            <button style={{ minWidth: '80px', backgroundColor: '#7065f0' }} className='float-end btn btn-primary pt-3 pb-3 mt-5 mb-5 me-3'>Sign up</button>
-                            <button style={{ minWidth: '80px', color:'#7065f0',border: '2px solid #F9FAFB', borderRadius: '8px', backgroundColor: '#edecfb' }} className='HeaderLandingPage_left btn pt-3 pb-3 mt-5 mb-5 ms-2 me-2 font-weight-bolder'>Login</button>
+                            <button style={{ minWidth: '80px', backgroundColor: '#7065f0' }} onClick={()=>navigate('/sign-up')} className='float-end btn btn-primary pt-3 pb-3 mt-5 mb-5 me-3'>Sign up</button>
+                            <button style={{ minWidth: '80px', color:'#7065f0',border: '2px solid #F9FAFB', borderRadius: '8px', backgroundColor: '#edecfb' }} onClick={()=>navigate('/sign-in')} className='HeaderLandingPage_left btn pt-3 pb-3 mt-5 mb-5 ms-2 me-2 font-weight-bolder'>Login</button>
                         </div>
                     </div>
 
