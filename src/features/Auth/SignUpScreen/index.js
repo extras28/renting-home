@@ -140,12 +140,9 @@ function SignUpScreen(props) {
                         <div style={{ width: '30vw', minWidth: '20rem' }} className="card mt-24 ms-5 bg-transparent pt-5 border-0">
                             <div style={{ color: '#D6DDEB' }} className=' border border-2 pt-5 ps-5 pe-5 rounded bg-white'>
 
-                                <img src={AppResource.images.houseTemplateImage} className="img-fluid rounded float-start" alt=""></img>
+                                <img src={AppResource.images.houseTemplateImage} className="img-fluid rounded float-start"  alt=""></img>
                                 <div>
                                     <img style={{ marginTop: '-84px', marginLeft: '-8px' }} className='img-fluid' src={AppResource.images.popularMark}></img>
-                                </div>
-                                <div>
-                                    <img style={{ marginTop: '-84px', marginLeft: '-8px' }} className='img-fluid ' src={AppResource.images.vector}></img>
                                 </div>
                                 <div style={{ color: 'black' }}>
                                     <div>

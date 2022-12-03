@@ -1,0 +1,141 @@
+.HeadLine {
+    
+    &_btn:hover {
+        cursor: pointer;
+        color: #7065F0 !important;
+        border: 1px solid #7065f0 !important;
+    }
+
+    &_tab {
+        width: fit-content !important;
+        height: 56px;
+    }
+
+    &_Search {
+        &_large {
+            position: absolute;
+            top: 54px;
+            left: 0px;
+            width: 800px;
+            box-shadow: 0px 30px 30px rgba(90, 90, 90, 0.1);
+            z-index: 2;
+        }
+
+    }
+
+    &_text {
+        color: #000929;
+        letter-spacing: -0.05em;
+        font-size: 64px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &_head {
+        text-align: center;
+    }
+
+    &_border {
+        border: 0 !important;
+    }
+
+    &_input {
+        cursor: pointer;
+    }
+
+    &_Right {
+        background-image: url('../../assets/images/background1_landingpage.png');
+        background-size: cover;
+
+        &_image {
+            position: absolute;
+            top: 104px;
+        }
+    }
+}
+
+.Benefit {
+    &_theme {
+        border: 1.5px solid #E0DEF7;
+        border-radius: 8px;
+        background-color: #F7F7FD;
+        overflow: hidden;
+
+    }
+}
+
+.PropertiesListing{
+
+    background-image: linear-gradient(#FFFFFF, #F0EFFB);
+    &_btn:hover{
+        background-color: white !important;
+        color:#7065F0 !important;
+    }
+
+    &_icon{
+        position: absolute;
+        top:20px;
+        left:20px;
+    }
+
+    &_favorite{
+        position:absolute;
+        top:28px;
+        right:24px;
+        cursor:pointer;
+    }
+
+    &_mark{
+        position:absolute;
+        bottom:-20px;
+        left:-8px;
+    }
+}
+
+.Tenant{
+    
+    .carousel-item{
+        // width: 20% !important;
+    }
+    background-color: #100A55;
+box-shadow: 0px 4px 200px rgba(232, 249, 247, 0.2);
+
+    &_items{
+            border:20px !important;
+            
+    }
+
+
+}
+
+
+
+.CTA {
+    background:linear-gradient(90deg, rgba(247, 247, 253, 0.5) 0%, #F7F7FD 50.17%, rgba(247, 247, 253, 0.5) 100%) !important;
+
+    &_largeForm{
+        position: absolute;
+        top:16px;
+        right:15px;
+        cursor: pointer;
+    }
+    &_smallForm{
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .HeadLine {
+        &_Right {
+            display: none !important;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (max-width: 1200px) {}

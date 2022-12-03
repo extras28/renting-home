@@ -120,9 +120,6 @@ function SignInScreen(props) {
                                 <div>
                                     <img style={{ marginTop: '-84px', marginLeft: '-8px' }} className='img-fluid' src={AppResource.images.popularMark}></img>
                                 </div>
-                                <div>
-                                    <img style={{ marginTop: '-84px', marginLeft: '-8px' }} className='img-fluid ' src={AppResource.images.vector}></img>
-                                </div>
                                 <div style={{ color: 'black' }}>
                                     <div>
 
